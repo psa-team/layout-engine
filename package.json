@@ -2,7 +2,9 @@
   "name": "layout-engine2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "files": ["build"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
