@@ -16,11 +16,11 @@ function LayoutEngine(props: LayoutEngineProps) {
       //1. load app schema
       const appSchema = await AppSchemaProvider.getAppSchema(props.modelId);
       //2. update state
-      setViewName(appSchema.initialView.name);
-      setViewProps(appSchema.initialView.value);
+      setViewName(appSchema.props.startView.key);
+      setViewProps({context: appSchema.props.startView.value});
       
-      setLayoutName(appSchema.layout.name);
-      setLayoutProps(appSchema.layout.value);
+      setLayoutName(appSchema.props.defaultLayout.key);
+      setLayoutProps({context: appSchema.props.defaultLayout.value});
 
     };
 

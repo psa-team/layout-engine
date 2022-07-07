@@ -5,21 +5,22 @@ export default class AppSchema {
   name: string;
   config: any;
 
-  initialView = {
-    name: "dashboard",
-    value: {}
-  }
-
-  layout = {
-    name: "defaultLayout",
-    value: {}
-  };
-
+  
   //указываем свойства, которые нам нужно заполнить из appschema
   props: {[index:string]: any} = {
     'startView': undefined,
     'defaultLayout': undefined
   };
+  
+  // initialView = {
+  //   name: this.props['startView'].key,
+  //   context: this.props['startView'].value
+  // }
+
+  // layout = {
+  //   name: this.props['defaultLayout'].key,
+  //   context: this.props['defaultLayout'].value
+  // };
 
   constructor(config: any) {
     this.name = config.key;
