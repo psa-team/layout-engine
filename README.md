@@ -4,4 +4,4 @@ React-библиотека, получающая данные из констр�
 
 ## Установка:
 
-`npm i @sergeyvbo/layout-engine`
+`npm i @psa-team/layout-engine`
